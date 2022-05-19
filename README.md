@@ -1,3 +1,8 @@
+### Diffusion PDE optimization using Vietoris-Rips simplicial complices
+
+https://arixiv.org/abs/666.666 by Ded, Jace, Monk, etc.
+
+
 ### Generate gl.c for your platform
 
 https://gen.glad.sh/
