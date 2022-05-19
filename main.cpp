@@ -16,6 +16,9 @@
 #include <gudhi/graph_simplicial_complex.h>
 #include <gudhi/Persistent_cohomology.h>
 
+#include "cnpy.h"
+
+
 
 Eigen::MatrixXd V;
 Eigen::MatrixXi F;
@@ -38,6 +41,9 @@ int main(int argc, char *argv[])
   Filtration_value threshold = 0.4;
 
   Gudhi::Points_off_reader<Point_d> off_reader("./mono_torus.off");
+
+  cnpy::NpyArray arr = cnpy::npy_load("volumetric_data_uint8_400.npy");
+
   // Proximity_graph prox_graph = Gudhi::compute_proximity_graph<Simplex_tree>(off_reader.get_point_cloud(),
   //                                                                           threshold,
   //                                                                           Gudhi::Euclidean_distance());
@@ -49,6 +55,7 @@ int main(int argc, char *argv[])
   rips_complex_from_file.create_complex(simplex_tree, 2);
   std::clog << "The complex contains " << simplex_tree.num_simplices() << " simplices \n";
   std::clog << "   and has dimension " << simplex_tree.dimension() << " \n";
+  std::clog << arr.shape[0] << " : " << arr.shape[1] << std::endl;
   //std::clog << simplex_tree.assign_filtration()
   // Plot the mesh
   igl::opengl::glfw::Viewer viewer;

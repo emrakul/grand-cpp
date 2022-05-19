@@ -11,15 +11,18 @@ macro(print_all_variables)
 endmacro()
 
 
-find_package( Eigen3 REQUIRED )
+find_package(Eigen3 REQUIRED )
 find_package(X11 REQUIRED)
 find_package(glfw3 REQUIRED)
+find_package(ZLIB REQUIRED)
+
+
 
 
 
 include_directories( "/usr/include/eigen3" )
 
 add_executable( ded main.cpp /usr/src/gl.c )
-target_link_libraries( ded X11 glfw3 )
+target_link_libraries( ded X11 glfw3 cnpy z)
 
 #print_all_variables()c
