@@ -2,3 +2,5 @@ Data/*
 *.out
 build/
 build/*
+.vscode
+
