@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/nikita/Documents/ded/build",
+  "command": "/usr/bin/g++ -I/usr/include/eigen3 -g -o CMakeFiles/ded.dir/main.cpp.o -c /home/nikita/Documents/ded/main.cpp",
+  "file": "/home/nikita/Documents/ded/main.cpp"
+},
+{
+  "directory": "/home/nikita/Documents/ded/build",
+  "command": "/usr/bin/gcc -I/usr/include/eigen3 -g -o CMakeFiles/ded.dir/usr/src/gl.c.o -c /usr/src/gl.c",
+  "file": "/usr/src/gl.c"
+}
+]

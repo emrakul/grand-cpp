@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/ded.dir/main.cpp.o CMakeFiles/ded.dir/usr/src/gl.c.o -o ded  -lX11 -lglfw3 
