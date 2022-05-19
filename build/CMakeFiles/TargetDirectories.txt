@@ -1,3 +1,0 @@
-/home/nikita/Documents/ded/build/CMakeFiles/ded.dir
-/home/nikita/Documents/ded/build/CMakeFiles/edit_cache.dir
-/home/nikita/Documents/ded/build/CMakeFiles/rebuild_cache.dir
