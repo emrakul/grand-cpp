@@ -1,4 +1,4 @@
-### Diffusion PDE optimization using Vietoris-Rips simplicial complices
+## Diffusion PDE optimization using Vietoris-Rips simplicial complices
 
 https://arixiv.org/abs/666.666 by Ded, Jace, Monk, et al.
 
