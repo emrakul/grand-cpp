@@ -8,3 +8,10 @@ put it in /usr/src
 `igl`, `gudhi` - both header-only
 
 ... more later
+
+### Build
+1.`mkdir build`
+
+2.`cmake .. && make`
+
+3.`./out`
