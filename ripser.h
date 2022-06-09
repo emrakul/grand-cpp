@@ -38,7 +38,7 @@
 
 //#define USE_COEFFICIENTS
 
-#define INDICATE_PROGRESS
+//#define INDICATE_PROGRESS
 #define PRINT_PERSISTENCE_PAIRS
 
 //#define USE_ROBINHOOD_HASHMAP
@@ -83,8 +83,6 @@ static const size_t num_coefficient_bits = 8;
 
 static const index_t max_simplex_index =
     (index_t(1) << (8 * sizeof(index_t) - 1 - num_coefficient_bits)) - 1;
-
-namespace ripser {
 
 void check_overflow(index_t i) {
 	if
@@ -1171,6 +1169,4 @@ void print_usage_and_exit(int exit_code) {
 	    << "  --ratio <r>      only show persistence pairs with death/birth ratio > r" << std::endl
 	    << std::endl;
 	exit(exit_code);
-}
-
 }
